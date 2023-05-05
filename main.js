@@ -19,4 +19,7 @@ function randomQuote(event) {
 const quoteButton = document.getElementById("quoteButton")
     quoteButton.addEventListener('click', randomQuote)
 
+// adds event listener to domcontentloaded and calls the randomQuote function
+
+document.addEventListener("DOMContentLoaded", randomQuote)
 
