@@ -7,7 +7,11 @@ function randomQuote(event) {
     })
     .then((data) => {
         let quote = data.quote
+        let anime = data.anime
+        let character = data.character
         console.log(quote)
+        console.log(anime)
+        console.log(character)
         const quoteResult = document.getElementById("quoteResult")
     })
     
