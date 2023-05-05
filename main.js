@@ -12,10 +12,9 @@ function randomQuote(event) {
         console.log(quote)
         console.log(anime)
         console.log(character)
-        const quoteLine = document.getElementById("animeQuote")
-        const charLine = document.getElementById("animeCharacter")
-        const titleLine = document.getElementById("animeTitle")
-        
+        let quoteLine = document.getElementById("animeQuote").textContent = quote;
+        let charLine = document.getElementById("animeCharacter").textContent = character;
+        let titleLine = document.getElementById("animeTitle").textContent = anime;
     })
     
     event.preventDefault()
