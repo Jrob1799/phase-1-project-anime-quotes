@@ -1,3 +1,5 @@
+// returns json data from API and inputs that data into the OL by id
+
 function randomQuote(event) {
     fetch("https://animechan.vercel.app/api/random")
     .then((response) => response.json())
@@ -11,6 +13,8 @@ function randomQuote(event) {
         let titleLine = document.getElementById("animeTitle").textContent = anime;
     })
 }
+
+// adds event listener to quote button and calls the randomQuote function
 
 const quoteButton = document.getElementById("quoteButton")
     quoteButton.addEventListener('click', randomQuote)
