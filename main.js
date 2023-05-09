@@ -40,7 +40,6 @@ function searchQuote(title) {
           .then(r => r.json())
           .then((data) => console.log(data));
 }
-searchQuote("Naruto")
 
 // adds event listener to quote button and calls the randomQuote function
 
