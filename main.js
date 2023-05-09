@@ -22,7 +22,7 @@ function animeList() {
       .then((data) => {
         const animeTitles = [];
         animeTitles.push(data)
-        console.log(animeTitles)
+        animeListHandler()
       })
     }
 
