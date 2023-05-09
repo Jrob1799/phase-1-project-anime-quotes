@@ -34,6 +34,14 @@ function ListHandler(Array) {
     });
 }
 
+// returns a quote by anime Title
+function searchQuote(title) {
+    fetch(`https://animechan.vercel.app/api/random/anime?title=${title}`)
+          .then(r => r.json())
+          .then((data) => console.log(data));
+}
+searchQuote("Naruto")
+
 // adds event listener to quote button and calls the randomQuote function
 
 const quoteButton = document.getElementById("quoteButton")
