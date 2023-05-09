@@ -22,9 +22,14 @@ function animeList() {
       .then((data) => {
         const animeTitles = [];
         animeTitles.push(data)
-        animeListHandler()
+        ListHandler(animeTitles)
       })
     }
+
+// takes the data from anime list and populates the select dropdown with options
+function ListHandler(Array) {
+    Array.forEach(element => console.log(element));
+}
 
 // adds event listener to quote button and calls the randomQuote function
 
