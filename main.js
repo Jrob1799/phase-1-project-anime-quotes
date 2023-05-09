@@ -41,6 +41,11 @@ function searchQuote(title) {
           .then((data) => console.log(data));
 }
 
+// uses searchQuote to return a quote from the anime selected in the dropdown menu
+function animeSelector() {
+}
+
+
 // adds event listener to quote button and calls the randomQuote function
 
 const quoteButton = document.getElementById("quoteButton")
@@ -50,3 +55,7 @@ const quoteButton = document.getElementById("quoteButton")
 
 document.addEventListener("DOMContentLoaded", randomQuote)
 document.addEventListener("DOMContentLoaded", animeList)
+const selectElement = document.getElementById("animeSelect")
+    selectElement.addEventListener("change", (event) =>{
+        console.log(event.target.value)
+    })
