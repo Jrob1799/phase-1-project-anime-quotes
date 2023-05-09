@@ -18,8 +18,13 @@ function randomQuote() {
 function animeList() {
     fetch('https://animechan.vercel.app/api/available/anime')
       .then(r => r.json())
-      .then(animes => console.log(animes))
-}
+      .then(data => {return data})
+      .then((data) => {
+        const animeTitles = [];
+        animeTitles.push(data)
+        console.log(animeTitles)
+      })
+    }
 
 // adds event listener to quote button and calls the randomQuote function
 
