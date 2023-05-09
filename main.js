@@ -20,15 +20,18 @@ function animeList() {
       .then(r => r.json())
       .then(data => {return data})
       .then((data) => {
-        const animeTitles = [];
-        animeTitles.push(data)
-        ListHandler(animeTitles)
+        ListHandler(data)
       })
     }
 
 // takes the data from anime list and populates the select dropdown with options
 function ListHandler(Array) {
-    Array.forEach(element => console.log(element));
+    Array.forEach(element => {
+        const animeDropDown = document.getElementById("animeSelect");
+        const option = document.createElement("option");
+        option.textContent = element
+        animeDropDown.appendChild(option);
+    });
 }
 
 // adds event listener to quote button and calls the randomQuote function
