@@ -42,7 +42,11 @@ function searchQuote(title) {
 }
 
 // uses searchQuote to return a quote from the anime selected in the dropdown menu
-function animeSelector() {
+function animeSelector(title) {
+    const searchButton = document.getElementById("searchButton")
+    searchButton.addEventListener("click", () => {
+        searchQuote(title);
+    });
 }
 
 
