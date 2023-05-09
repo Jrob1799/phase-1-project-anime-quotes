@@ -1,8 +1,8 @@
 // returns json data from API and inputs that data into the div by id
 
-function randomQuote(event) {
+function randomQuote() {
     fetch("https://animechan.vercel.app/api/random")
-    .then((response) => response.json())
+    .then(r => r.json())
     .then((data) => {return data})
     .then((data) => {
         let quote = data.quote
@@ -14,6 +14,13 @@ function randomQuote(event) {
     })
 }
 
+// populates anime dropdown with options
+function animeList() {
+    fetch('https://animechan.vercel.app/api/available/anime')
+      .then(r => r.json())
+      .then(animes => console.log(animes))
+}
+
 // adds event listener to quote button and calls the randomQuote function
 
 const quoteButton = document.getElementById("quoteButton")
@@ -22,4 +29,4 @@ const quoteButton = document.getElementById("quoteButton")
 // adds event listener to domcontentloaded and calls the randomQuote function
 
 document.addEventListener("DOMContentLoaded", randomQuote)
-
+document.addEventListener("DOMContentLoaded", animeList)
