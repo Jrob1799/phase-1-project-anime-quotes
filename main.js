@@ -51,11 +51,15 @@ function animeSelector() {
 const quoteButton = document.getElementById("quoteButton")
     quoteButton.addEventListener('click', randomQuote)
 
-// adds event listener to domcontentloaded and calls the randomQuote function
+// adds event listener to domcontentloaded and calls the randomQuote and animeList function
 
-document.addEventListener("DOMContentLoaded", randomQuote)
-document.addEventListener("DOMContentLoaded", animeList)
+document.addEventListener("DOMContentLoaded", randomQuote);
+document.addEventListener("DOMContentLoaded", animeList);
+
+//adds event listener to the drop down menu and returns the target value to animeSelector
+
 const selectElement = document.getElementById("animeSelect")
     selectElement.addEventListener("change", (event) =>{
-        console.log(event.target.value)
+        let dropDownTarget = event.target.value;
+        animeSelector(dropDownTarget);
     })
