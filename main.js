@@ -1,4 +1,4 @@
-// returns json data from API and inputs that data into the OL by id
+// returns json data from API and inputs that data into the div by id
 
 function randomQuote(event) {
     fetch("https://animechan.vercel.app/api/random")
