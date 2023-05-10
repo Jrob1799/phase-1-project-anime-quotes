@@ -35,18 +35,18 @@ function ListHandler(Array) {
 }
 
 // returns a quote by anime Title
-// function searchQuote(title) {
-//     fetch(`https://animechan.vercel.app/api/random/anime?title=${title}`)
-//           .then(r => r.json())
-//           .then((data) => () {
-//             let quote = data.quote
-//             let anime = data.anime
-//             let character = data.character
-//             let quoteLine = document.getElementById("animeQuote").textContent = quote;
-//             let charLine = document.getElementById("animeCharacter").textContent = character;
-//             let titleLine = document.getElementById("animeTitle").textContent = anime;
-//           });
-// }
+function searchQuote(title) {
+    fetch(`https://animechan.vercel.app/api/random/anime?title=${title}`)
+          .then(r => r.json())
+          .then((data) => {
+            let quote = data.quote
+            let anime = data.anime
+            let character = data.character
+            let quoteLine = document.getElementById("animeQuote1").textContent = quote;
+            let charLine = document.getElementById("animeCharacter1").textContent = character;
+            let titleLine = document.getElementById("animeTitle1").textContent = anime;
+          });
+}
 
 // uses searchQuote to return a quote from the anime selected in the dropdown menu
 function animeSelector(title) {
