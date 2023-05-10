@@ -8,9 +8,9 @@ function randomQuote() {
         let quote = data.quote
         let anime = data.anime
         let character = data.character
-        let quoteLine = document.getElementById("animeQuote").textContent = quote;
-        let charLine = document.getElementById("animeCharacter").textContent = character;
-        let titleLine = document.getElementById("animeTitle").textContent = anime;
+        document.getElementById("animeQuote").textContent = quote;
+        document.getElementById("animeCharacter").textContent = character;
+        document.getElementById("animeTitle").textContent = anime;
     })
 }
 
@@ -42,9 +42,9 @@ function searchQuote(title) {
             let quote = data.quote
             let anime = data.anime
             let character = data.character
-            let quoteLine = document.getElementById("animeQuote1").textContent = quote;
-            let charLine = document.getElementById("animeCharacter1").textContent = character;
-            let titleLine = document.getElementById("animeTitle1").textContent = anime;
+            document.getElementById("animeQuote1").textContent = quote;
+            document.getElementById("animeCharacter1").textContent = character;
+            document.getElementById("animeTitle1").textContent = anime;
           });
 }
 
