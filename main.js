@@ -40,11 +40,9 @@ function searchQuote(title) {
           .then(r => r.json())
           .then((data) => {
             let quote = data.quote
-            let anime = data.anime
             let character = data.character
             document.getElementById("animeQuote1").textContent = quote;
             document.getElementById("animeCharacter1").textContent = character;
-            document.getElementById("animeTitle1").textContent = anime;
           });
 }
 
