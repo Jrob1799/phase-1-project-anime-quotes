@@ -1,14 +1,41 @@
 # Anime Quote Generator
 
-Anime Quote Generator is a website that will generate a random quote and supply the Anime and Character the quote is from. It has a "generate Quote" button that will produce a new quote and supporting info. The website also has a dropdown menu that provides the entire list of supported sources and after selecting your desired source, you can click the "Go!" button and it will return a random quote from that anime and list the character it is coming from.
+Welcome to the Anime Quote Generator! This simple, user-friendly web app generates random anime quotes and allows users to search for quotes from specific anime titles. Visit the live website [here](https://jrob1799.github.io/phase-1-project-anime-quotes/).
 
-## Contributing
+![Anime Quote Generator Demo](./demo.gif)
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+## Features
 
-Please make sure to update tests as appropriate.
+- Generate random anime quotes with a click of a button
+- Display the quote, character, and anime title for each generated quote
+- Search for quotes from specific anime titles using a dropdown menu
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- Fetch API
+
+## How to Use
+
+1. Visit the [Anime Quote Generator website](https://jrob1799.github.io/phase-1-project-anime-quotes/).
+2. Click the "Generate Quote" button to generate a random anime quote.
+3. To search for a quote from a specific anime title, select an anime from the dropdown menu and click the "Go!" button.
+
+## Running the Project Locally
+
+1. Clone this repository to your local machine.
+2. Open the `index.html` file in your favorite web browser.
+
+## Author
+
+- Jrob1799
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more information.
+
+## Contributing
+
+Feel free to submit pull requests, report issues, or suggest new features. Your contributions are always welcome!
